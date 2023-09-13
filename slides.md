@@ -13,7 +13,7 @@ image: './assets/cover.jpeg'
 
 # Brown Bag Lunch - HelloAsso{.mix-blend-difference}
 
-Hydratation front-end: éviter de boire la tasse{.drop-shadow-md}
+Hydratation front-end: évitez de boire la tasse !{.drop-shadow-md}
 
 <div class="absolute bottom-10 left-10 text-xs">
 Photo de <a href="https://unsplash.com/fr/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> sur <a href="https://unsplash.com/fr/photos/dXYE1d08BiY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -30,9 +30,99 @@ Mieux comprendre l'hydration permet d'éviter des bugs et d'optimiser les perfor
 - Exemples de bugs ou problèmes perf / UX
 - Le futur de l'hydration
 -->
-
----
-layout: image
-image: './assets/csr.svg'
 ---
 
+# Sommaire
+
+- Rendering modes
+- L'hydratation en détails
+- Performance et UX
+- Démos
+- Le futur de l'hydratation
+
+---
+
+# CSR
+
+Source: [nuxt.com](https://nuxt.com)
+
+![CSR](/assets/csr.svg){.w-4/5}
+
+
+---
+
+# SSR
+
+Source: [nuxt.com](https://nuxt.com)
+
+![SSR](/assets/ssr.svg){.w-4/5}
+
+---
+transition: none
+---
+
+![Static HTML](/assets/hydration/1.png){.w-3/5 .mx-auto}
+
+---
+transition: none
+---
+
+![Links](/assets/hydration/2.png){.w-3/5 .mx-auto}
+
+---
+transition: none
+---
+
+![Links](/assets/hydration/3.png){.w-3/5 .mx-auto}
+
+---
+transition: none
+---
+
+![Links](/assets/hydration/4.png){.w-3/5 .mx-auto}
+
+---
+
+![Links](/assets/hydration/5.png){.w-4/5 .mx-auto .mt-24}
+
+---
+
+# Les inconvénients de l'hydratation
+
+<v-clicks>
+
+- Faire le travail "deux fois"
+- Page non interactive pendant l'hydratation
+- Risque de bugs ou de dégradation des performances
+- "Flash" de contenu ou de styles
+
+</v-clicks>
+
+---
+
+# Le futur de l'hydratation
+
+---
+
+# Scripts plus légers
+
+- Svelte, Solid...
+- Vue Vapor mode
+
+---
+
+# Lazy / Partial hydration
+
+- Vue 3 : Choisir une stratégie d'hydratation au niveau du composant
+
+---
+
+# Components Islands
+
+- Une page statique par défaut avec des "îlots" d'interactivité
+
+---
+
+# Server Components (Nuxt)
+
+- Une page dynamique par défaut avec des "îlots" statiques rendus uniquement côté serveur
