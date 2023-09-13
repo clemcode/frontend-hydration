@@ -1,11 +1,5 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Hydration frontend
 
-To start the slide show:
+## Eviter de boire la tasse !
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
-
-Edit the [slides.md](./slides.md) to see the changes.
-
-Learn more about Slidev on [documentations](https://sli.dev/).
+Slides from the Frontend Hydration talk given at HelloAsso Brown Bag Lunch (09/23) - 🌐 FR
