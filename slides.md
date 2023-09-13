@@ -106,6 +106,7 @@ transition: none
 
 # Scripts plus légers
 
+Utiliser des méthodes de compilation plus agressives pour diminuer la taille des scripts
 - Svelte, Solid...
 - Vue Vapor mode
 
