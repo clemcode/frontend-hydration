@@ -1,6 +1,7 @@
 ---
 theme: apple-basic
 highlighter: shiki
+colorSchema: 'light'
 lineNumbers: false
 drawings:
   persist: false
