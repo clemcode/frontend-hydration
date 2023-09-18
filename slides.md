@@ -64,27 +64,51 @@ transition: none
 
 ![Static HTML](/assets/hydration/1.png){.w-3/5 .mx-auto}
 
+<!-- 
+A ce stade, on a une page statique, sans interactivité
+Les scripts sont en train d'être téléchargés, parsés et exécutés
+-->
 ---
 transition: none
 ---
 
 ![Links](/assets/hydration/2.png){.w-3/5 .mx-auto}
 
+<!-- 
+Si les liens <a> sont cliqués, on  retrouve le comportement d'une MPA classique
+D'où l'importance de ne pas utiliser de navigation programmatique pour les éléments de navigation importants.
+-->
 ---
 transition: none
 ---
 
-![Links](/assets/hydration/3.png){.w-3/5 .mx-auto}
+![Forms](/assets/hydration/3.png){.w-3/5 .mx-auto}
 
+<!-- 
+Si les formulaires respectent les standards HTML, il fonctionneront même sans JS
+method POST, action, validation HTML...
+-->
 ---
 transition: none
 ---
 
-![Links](/assets/hydration/4.png){.w-3/5 .mx-auto}
+![Non-interactive](/assets/hydration/4.png){.w-3/5 .mx-auto}
 
 ---
 
-![Links](/assets/hydration/5.png){.w-4/5 .mx-auto .mt-24}
+![Hydration](/assets/hydration/5.png){.w-4/5 .mx-auto .mt-24}
+
+<!-- 
+Vue prend en charge la page en réconciliant le DOM statique et l'arbre de composants
+On rajoute les event handlers etc... Le state utilisé pour générer la page en SSR est réutilisé. C'est le payload.
+-->
+---
+
+# Payload
+
+[Nuxt devtools](https://devtools.nuxt.com/)
+
+![Payload](/assets/payload.png){.w-4/5}
 
 ---
 
@@ -101,30 +125,50 @@ transition: none
 
 ---
 
+# Takeaways
+
+- Ecrire du HTML sémantique.
+- Contrôler la taille du payload.
+- Utiliser l'injection de scripts de pré-hydration pour éviter des flashs de contenu.
+
+---
+
 # Le futur de l'hydratation
 
 ---
 
 # Scripts plus légers
 
-Utiliser des méthodes de compilation plus agressives pour diminuer la taille des scripts
-- Svelte, Solid...
-- Vue Vapor mode
+Utiliser des méthodes de compilation plus agressives pour diminuer la taille des scripts.
+
+- Svelte, [Solid](https://www.youtube.com/watch?v=hw3Bx5vxKl0)...
+- [Vue Vapor mode](https://youtu.be/I5mGNB-4f0o?si=h617luElEgLETniF&t=1220)
 
 ---
 
 # Lazy / Partial hydration
 
-- Vue 3 : Choisir une stratégie d'hydratation au niveau du composant
+Vue 3 : Choisir une stratégie d'hydratation au niveau du composant.
+
+*Feature annoncée pour le Q2 2023*
 
 ---
 
 # Components Islands
 
-- Une page statique par défaut avec des "îlots" d'interactivité
+Une page statique par défaut avec des "îlots" d'interactivité
+
+- [Astro](https://astro.build/)
 
 ---
 
 # Server Components (Nuxt)
 
-- Une page dynamique par défaut avec des "îlots" statiques rendus uniquement côté serveur
+- Une page dynamique par défaut avec des "îlots" statiques rendus uniquement côté serveur.
+
+---
+
+# Ressources
+
+- [Ryan Carnito - Why hydration in JS frameworks is so challenging?](https://dev.to/this-is-learning/why-efficient-hydration-in-javascript-frameworks-is-so-challenging-1ca3)
+- [Podcast Javascript Jabber - Front-end hydration](https://podcastaddict.com/javascript-jabber/episode/152420337)
