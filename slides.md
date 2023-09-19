@@ -124,6 +124,10 @@ On rajoute les event handlers etc... Le state utilisé pour générer la page en
 </v-clicks>
 
 ---
+# Demo
+
+[https://github.com/clemcode/frontend-hydration-demo](https://github.com/clemcode/frontend-hydration-demo/)
+---
 
 # Takeaways
 
