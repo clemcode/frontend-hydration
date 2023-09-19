@@ -33,7 +33,7 @@ Mieux comprendre l'hydration permet d'éviter des bugs et d'optimiser les perfor
 -->
 ---
 
-# Sommaire
+# Le menu du jour
 
 - Rendering modes
 - L'hydratation en détails
