@@ -153,11 +153,12 @@ Vue 3 : Choisir une stratégie d'hydratation au niveau du composant.
 *Feature annoncée pour le Q2 2023*
 
 ---
-
+layout: image-right
+image: '/assets/islands.png'
+---
 # Components Islands
 
 Une page statique par défaut avec des "îlots" d'interactivité
-
 - [Astro](https://astro.build/)
 
 ---
@@ -172,3 +173,5 @@ Une page statique par défaut avec des "îlots" d'interactivité
 
 - [Ryan Carnito - Why hydration in JS frameworks is so challenging?](https://dev.to/this-is-learning/why-efficient-hydration-in-javascript-frameworks-is-so-challenging-1ca3)
 - [Podcast Javascript Jabber - Front-end hydration](https://podcastaddict.com/javascript-jabber/episode/152420337)
+- [Josh Comeau - Making sense of React server components](https://www.joshwcomeau.com/react/server-components)
+- [Patterns.dev](https://www.patterns.dev/posts) > Rendering patterns
